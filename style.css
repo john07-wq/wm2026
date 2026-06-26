@@ -1,0 +1,208 @@
+/* -----------------------------
+   Allgemein
+------------------------------ */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f6f9;
+    color:#333;
+    line-height:1.6;
+}
+
+/* -----------------------------
+   Header
+------------------------------ */
+
+header{
+    background:linear-gradient(135deg,#0057b8,#009739);
+    color:white;
+    text-align:center;
+    padding:70px 20px;
+}
+
+header h1{
+    font-size:50px;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:20px;
+    opacity:0.9;
+}
+
+/* -----------------------------
+   Navigation
+------------------------------ */
+
+nav{
+    background:#1f2937;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:18px;
+    position:sticky;
+    top:0;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#ffcc00;
+}
+
+/* -----------------------------
+   Hauptbereich
+------------------------------ */
+
+main{
+    width:90%;
+    max-width:1100px;
+    margin:50px auto;
+}
+
+/* -----------------------------
+   Karten
+------------------------------ */
+
+.card{
+    background:white;
+    border-radius:15px;
+    padding:25px;
+    margin-bottom:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h2{
+    color:#0057b8;
+    margin-bottom:15px;
+}
+
+.card ul{
+    margin-left:20px;
+}
+
+.card li{
+    margin-bottom:10px;
+}
+
+/* -----------------------------
+   Buttons
+------------------------------ */
+
+button{
+    background:#009739;
+    color:white;
+    border:none;
+    padding:14px 28px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#006d2d;
+    transform:scale(1.05);
+}
+
+/* -----------------------------
+   Bilder
+------------------------------ */
+
+img{
+    width:100%;
+    border-radius:12px;
+}
+
+/* -----------------------------
+   Tabellen
+------------------------------ */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+th{
+    background:#0057b8;
+    color:white;
+}
+
+th,td{
+    padding:15px;
+    border:1px solid #ddd;
+    text-align:center;
+}
+
+tr:nth-child(even){
+    background:#f7f7f7;
+}
+
+/* -----------------------------
+   Footer
+------------------------------ */
+
+footer{
+    background:#1f2937;
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:60px;
+}
+
+/* -----------------------------
+   Animation
+------------------------------ */
+
+.card{
+    animation:fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* -----------------------------
+   Responsive
+------------------------------ */
+
+@media(max-width:768px){
+
+    header h1{
+        font-size:36px;
+    }
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    main{
+        width:95%;
+    }
+}
